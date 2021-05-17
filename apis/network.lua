@@ -1,5 +1,5 @@
 local function filterCrafter(_, obj)
-    return obj.getLabel() == "crafter" end
+    return obj.getLabel() == "crafter"
 end
 local function filterBinnie(_, obj)
     return obj.getMetadata().name == "binniecore:storage"
