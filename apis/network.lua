@@ -4,5 +4,5 @@ binnieStorage = peripheral.find("binnicore:tile_machine", function (_, obj) retu
 function reload()
     network.craftyTurtle = peripheral.find("turtle", function (_, obj) return obj.getLabel() == "crafter" end)
     network.craftingStation = peripheral.find("minecraft:tconstruct_craftingstation")
-    network.binnieStorage = peripheral.find("binnicore:tile_machine", function (_, obj) return obj.getMetadata() end)
+    network.binnieStorage = peripheral.find("binniecore:tile_machine", function (_, obj) return obj.getMetadata().name == "binniecore:storage" end)
 end
